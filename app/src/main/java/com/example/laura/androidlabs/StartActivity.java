@@ -11,3 +11,4 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
     }
 }
+
