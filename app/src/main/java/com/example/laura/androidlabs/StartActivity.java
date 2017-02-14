@@ -27,6 +27,16 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
+        Button btStartChat = (Button) findViewById(R.id.buttonChat);
+        btStartChat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent chatWindow = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(chatWindow);
+                Log.i(ACTIVITY_NAME, "USer Clicked Start Chart");
+            }
+        });
+
         Log.i(ACTIVITY_NAME, "In onCreate()");
     }
 
