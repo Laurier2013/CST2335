@@ -37,11 +37,21 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
+        Button btWeather = (Button) findViewById(R.id.weatherButton);
+        btWeather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked w");
+                Intent weatherForecast = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivity(weatherForecast);
+                Log.i(ACTIVITY_NAME, "User clicked Weather");
+            }
+        });
         Log.i(ACTIVITY_NAME, "In onCreate()");
     }
 
     public void onResume(){
-        super.onRestart();
+        super.onResume();
         Log.i(ACTIVITY_NAME, "In onResume()");
     }
     public void onStart(){
