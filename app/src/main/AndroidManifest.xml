@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.laura.androidlabs">
-    // int folder: data/data/package/
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -26,20 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListItemsActivity" />
-        <!--
- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-        -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <activity android:name=".ChatWindow" />
-        <activity android:name=".ChatDatabaseHelper" />
-        <activity
-            android:name=".WeatherForecast"
-            android:label="@string/title_activity_weather_forcast"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".WeatherForecast" />
+        <activity android:name=".MessageDetails"></activity>
     </application>
 
 </manifest>

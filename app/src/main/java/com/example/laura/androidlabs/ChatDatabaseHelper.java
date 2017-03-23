@@ -20,7 +20,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
             "DROP TABLE IF EXISTS " + TABLE_NAME + ";";
 
     public ChatDatabaseHelper(Context ctx){
-        super(ctx, DATABASE_NAME, null, VERSION_NUM);
+        super(ctx, TABLE_NAME, null, VERSION_NUM);
     }
 
     @Override
